@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.media{
+    padding: 5px 0;
+    background-color: grey;
+}body{
+    font-family: 'Raleway', sans-serif;
+    background: #fff;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+.top-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background: #252525;
+    color: #fff;
+    padding: 20px 30px;
+}
+
+.top-head .fas{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.nav-bar ul li{
+    text-align: center;
+    display: block;
+    padding: 15px 0;
+    transition: all 1s ease-in-out;
+}
+
+.nav-bar ul li:hover{
+    background: #0e0e0e;
+}
+
+.nav-bar ul li a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.nav-bar ul li a:hover{
+    text-decoration: underline;
+}
+
+.social-icons{
+    display: none;
+}
+
+@media(min-width: 800px){
+    .ham-btn, .times-btn{
+        display: none!important;
+    }
+
+    .navigation-container{
+        display: flex;
+        background: #252525;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .top-head{
+        flex: 0 0 15%;
+    }
+
+    .nav-bar{
+        flex: 1 0 auto;
+        height: 100%;
+        background: transparent;
+    }
+
+    .nav-bar nav ul{
+        display: flex;
+        justify-content: center;
+    }
+    .nav-bar nav ul li{
+        padding-right: 30px;
+    }
+
+    .nav-bar nav ul li:hover{
+        background: none;
+    }
+
+
+    .social-icons{
+        flex: 0 1 30%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .social-icons .fab{
+        color: #fff;
+        font-size: 2rem;
+    }
+    .social-icons ul{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    .social-icons ul li{
+        padding: 40px;
+    }
+}
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contactus{
+    background: url(./img/Screenshot\ 2022-06-10\ 231705.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 6%;
+}
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    
+}
+.contactus .container p{
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3%;
+    color: black;
+    letter-spacing: 3px;
+}
+
+.formcontact{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+
+}
+
+.information{
+    font-size: 16px;
+    font-style: italic;
+    color: white;
+    letter-spacing: 2px;
+    /* background-color: white; */
+
+}
+.formm{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 350px;
+}
+input{
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    background-color: #333;
+
+    /* background-color: gray; */
+    /* background-color: rgba(136,133,133,0.5); */
+    border: none;
+    outline: none;  
+}
+textarea{
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    background-color: #333;
+
+    /* background-color: grey; */
+    /* background-color: rgba(136,133,133,0.5); */
+    border: none;
+    outline: none; 
+}
+textarea::placeholder{
+    color: white;
+}
+input::placeholder{
+    color: white;
+}
+.submit{
+    width: 35%;
+    background: none;
+    padding: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 33px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 3%;
+    border: 2px solid rgb(190,190,190);
+    color: rgb(190,190,190);
+}
+.submit:hover{
+    border: 1px solid gray;
+    color: gray;
+    background-color: black;
+    cursor: pointer; 
+}
+footer{
+    background-color:black;
+    color:white;
+    padding:10px;
+    text-align:justify;
+}
